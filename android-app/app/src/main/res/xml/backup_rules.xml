@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Auto Backup rules (used as fullBackupContent, primarily API < 31).
+   Sensitive SyncMesh data is excluded so the pairing code and clipboard history are not
+   copied into cloud backups. Keyboard (HeliBoard) settings live in the default preferences
+   and are intentionally left backed up.
+   See https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <exclude domain="database" path="syncmesh.db" />
+    <exclude domain="sharedpref" path="syncmesh_prefs.xml" />
+    <exclude domain="sharedpref" path="syncmesh_keyboard_bridge.xml" />
+</full-backup-content>

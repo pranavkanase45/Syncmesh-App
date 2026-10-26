@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingHorizontal="@dimen/screen_margin"
+        android:paddingTop="@dimen/space_sm"
+        android:paddingBottom="@dimen/screen_padding_bottom"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/text_devices_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/space_xl"
+        android:drawablePadding="@dimen/space_md"
+        android:text="@string/empty_paired_devices"
+        android:textAppearance="@style/TextAppearance.Syncmesh.Body"
+        android:textAlignment="center"
+        app:drawableTopCompat="@drawable/ic_devices"
+        app:drawableTint="?attr/colorOnSurfaceVariant" />
+</FrameLayout>
